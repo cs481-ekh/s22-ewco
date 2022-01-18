@@ -1,4 +1,4 @@
-name: 'Automatic build'
+name: 'Automatic Pages Build'
 on:
   workflow_dispatch:
   push:
