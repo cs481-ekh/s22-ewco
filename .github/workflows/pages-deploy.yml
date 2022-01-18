@@ -20,5 +20,5 @@ jobs:
 
       - name: Deploy
         run: |
-        cd docs
-        bash tools/deploy.sh
+          cd docs
+          bash tools/deploy.sh
