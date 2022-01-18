@@ -6,11 +6,15 @@ on:
       - docs/
 
 jobs:
-  continuous-delivery:
+  build-pages_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        
+      - name: Enter docs dir
+        run: |
+          cd docs
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -18,7 +22,6 @@ jobs:
           ruby-version: 2.7
           bundler-cache: true
 
-      - name: Deploy
+      - name: Deploy-Pages
         run: |
-          cd docs
           bash tools/deploy.sh
