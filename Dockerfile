@@ -9,5 +9,5 @@
 
 FROM nginx:latest
 EXPOSE 80
-COPY ./build /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 # COPY --from=build /app/build /usr/share/nginx/html
