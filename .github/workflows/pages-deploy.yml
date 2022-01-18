@@ -24,4 +24,4 @@ jobs:
 
       - name: Deploy-Pages
         run: |
-          bash tools/deploy.sh
+          bash ./tools/deploy.sh
