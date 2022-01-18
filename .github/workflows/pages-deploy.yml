@@ -6,7 +6,7 @@ on:
       - docs/
 
 jobs:
-  build-pages_and_deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
