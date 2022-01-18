@@ -1,2 +1,5 @@
-# capstone-template
-BSU CS481 Capstone project template
+## Secrets
+The following secrets must be defined in the repo:
+- 
+- 
+- 
