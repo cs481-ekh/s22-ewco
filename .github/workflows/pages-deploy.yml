@@ -1,0 +1,24 @@
+name: 'Automatic build'
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - docs/
+
+jobs:
+  continuous-delivery:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: Deploy
+        run: |
+        cd docs
+        bash tools/deploy.sh
