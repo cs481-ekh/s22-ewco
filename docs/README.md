@@ -1,4 +1,4 @@
-##Running Locally
+## Running Locally
 Clone the repository, then navigate to the directory and run the following command:
 > **Note**: Ensure Docker is installed
 ```bash
