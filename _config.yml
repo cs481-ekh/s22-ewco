@@ -74,10 +74,10 @@ theme_mode:   dark # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: https://cdn.jsdelivr.net/gh/cs481-ekh/s22-ewco@main
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://github.com/cs481-ekh/s22-ewco/blob/main/assets/img/avatar.png
+avatar: /assets/img/avatar.png
 
 # boolean type, the global switch for Table of Contents (right slider) in posts.
 toc: true
