@@ -4,7 +4,7 @@
 Visit the [documentation website](https://cs481-ekh.github.io/s22-ewco/)!
 
 ## 📜 Creating a Website Post
-All website posts are written in Markdown and placed as under the ```_posts``` directory.
+All website posts are written in Markdown and placed under the ```_posts``` directory.
 
 ### File Name
 All posts must follow the ```YYYY-MM-DD-TITLE.EXTENSION``` format, for example ```2022-01-20-Title.md```.
