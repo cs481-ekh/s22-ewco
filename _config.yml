@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
 # and doesn't have a custom domain.
-baseurl: ''
+baseurl: '/s22-ewco'
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -26,7 +26,7 @@ description: >-                        # used by seo meta and the atom feed
   Documentation regarding the development of an optimized web controller.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://cs481-ekh.github.io/s22-ewco/'
 
 github:
   username: GoWestRobotics             # change to your github username
@@ -77,7 +77,7 @@ theme_mode:   dark # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://github.com/cs481-ekh/s22-ewco/blob/main/assets/img/avatar.png
 
 # boolean type, the global switch for Table of Contents (right slider) in posts.
 toc: true
