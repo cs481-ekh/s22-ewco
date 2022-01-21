@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
     paths-ignore:
       - .gitignore
       - docs/
@@ -22,14 +22,14 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}      
-          
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
       # Build image then push to Docker Hub
       - name: Build Docker Image
         run: |
           docker build --tag  ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.APP_NAME }}:${{GITHUB.SHA}} .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.APP_NAME }}:${{GITHUB.SHA}}
-  
+
   deploy-to-k3s:
     needs: build-docker-image
     runs-on: ubuntu-latest
@@ -50,10 +50,10 @@ jobs:
       - name: Deploy to K3s
         run: |
           kubectl create ns ${{ secrets.APP_NAME }}-system ||  echo "Skipping..."
-          
+
           sed -i'' -e 's/DOCKERHUB_USERNAME/${{ secrets.DOCKERHUB_USERNAME }}/g' -e 's/APP_NAME/${{ secrets.APP_NAME }}/g' -e 's/GIT_HASH/${{GITHUB.SHA}}/g' ./kubernetes/deployment.yml
           kubectl apply -f ./kubernetes/deployment.yml
-          
+
           sed -i'' -e 's/APP_NAME/${{ secrets.APP_NAME }}/g' ./kubernetes/service.yml
           kubectl apply -f ./kubernetes/service.yml
 
