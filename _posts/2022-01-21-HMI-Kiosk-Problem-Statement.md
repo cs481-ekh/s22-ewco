@@ -10,8 +10,8 @@ toc: true # enable/disable Table of Contents on post
 math: false
 mermaid: false
 ---
-## Background
-### Go West Robotics
+# Background
+## Go West Robotics
 Go West Robotics is a Boise-based robotics software company. The company writes software for a
 variety of robotics applications, spanning from Industrial Automation (Manufacturing / Warehouse
 automation) to Autonomous Mobile Robots (Self Driving Vehicles, Logistics, Construction, etc.). Go West
@@ -19,7 +19,7 @@ specializes in the application of modern/mainstream software development to robo
 using widely used open source platforms such as Linux, Python, C/C++, NodeJs and Rust. Applications
 vary from algorithm development and sensor fusion to robot motion planning and robotic hardware
 integration.
-### Industrial PCs
+## Industrial PCs
 Fanless Industrial PCs are x64 compatible hardware in an industrial grade enclosure and form
 factor. They are basically small and indestructible PCs with some industry specific IO. These
 can run Linux much the same as a regular laptop, although specs are often on the low end to
@@ -27,7 +27,7 @@ keep them affordable, with a price range between $200 - $1000. For this project 
 the lower end of that spectrum, to end up with a system that is capable on all platforms. The
 reference hardware for this project is the OnLogic CL200g-11, which has an Intel Celeron
 N3350 and 1GB of RAM
-### HMI Kiosk
+## HMI Kiosk
 Most Industrial Automation lines will need user interaction on the factory floor. Traditionally these are
 clunky interfaces built into some proprietary device (PLCs). Because we write our logic for our
 installations on Linux platforms, it makes much more sense to use modern web or mobile technologies
@@ -36,12 +36,12 @@ stand-alone on a closed local network. They need to be simple to install (few co
 dependencies) and be quickly debuggable on site. At the same time, these systems need to be secure:
 factory personnel should not be able to get out of the web interface or have access to any part of the
 backend system.
-### FreeBSD
+## FreeBSD
 FreeBSD is a secure lightweight OS. The BSD kernel is a fork from the traditional Linux kernel
 and very carefully managed in terms of security and bloat. Small size and security make it a
 good choice for a kiosk HMI. Unlike OpenBSD or roll-your own Yocto Linux builds, FreeBSD releases are full featured enough to run modern languages like Rust and a browser like Firefox,
 while having well-tested and understood releases with a community to help with challenges.
-### Rust
+## Rust
 Rust is a fast and safe compiled language resulting in a single binary application without
 dependencies. These are all essential for the kiosk:
 - **Fast:** the kiosk runs on a low resource platform. CPU and memory resources must be
@@ -56,8 +56,8 @@ dependencies. These are all essential for the kiosk:
     binaries are fully self-contained and run without the need to install additional runtime
     libraries, making deployment simple and providing ease of versioning.
 
-## Project Description
-###Problem Statement
+# Project Description
+## Problem Statement
 Go West Robotics deploys HMIs to industrial environments for a number of clients. To keep the cost
 down, we need to be able to use fairly simple hardware, while still offering state of the art UIs.
 Oftentimes, these systems are air gapped from the internet, and so installations must be fast and simple.
@@ -71,7 +71,7 @@ Using a full desktop Linux such as Ubuntu or Manjaro brings in more than the sma
 can handle. Using backend languages like Node and Python cause upgrade and versioning nightmares,
 while posing an IP security problem when code is in plaintext on the device.
 
-### Desired Solution
+## Desired Solution
 Go West would like to have a proof of concept for a lightweight OS and webserver running on small
 footprint hardware; a Celeron CPU with 1GB RAM. This should be enough to run a FireFox browser in
 kiosk mode, without installing a desktop environment. For the OS we would like to use FreeBSD (latest
@@ -80,7 +80,7 @@ stable) and a frontend written in Vue.js. The backend webserver runs on the same
 written in Rust; we recommend ‘Warp’. It should communicate with a PostgreSQL Database using the
 Diesel library.
 
-#### Resources:
+### Resources:
 - **Rust Diesel:**
   - https://diesel.rs/guides/getting-started
 - **Warp web server framework:**
@@ -90,7 +90,7 @@ Diesel library.
 - **Running FireFox without a desktop:**
   - https://linuxconfig.org/how-to-run-x-applications-without-a-desktop-or-a-wm
 
-### Frontend requirements
+## Frontend requirements
   The frontend requirements are simple for this proof of concept, but must display the capabilities of the
   full system. There will be 3 views:
 - **System diagnostics**
@@ -124,7 +124,7 @@ more complex elements; animation in the form of donut charts or a sliding naviga
 however no need for things like video playback or webgl.
 
 
-### Installation and upgrade requirements
+## Installation and upgrade requirements
 The initial provisioning of the system can be manual, meaning that all components are installed with a
 network connection step by step, not via an installer script or other automated mechanism. Once
 provisioned though, the system should be upgradable via its own interface (see the System Maintenance
