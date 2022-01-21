@@ -2,8 +2,8 @@
 title: Creating a Post
 date: 2022-01-16 09:00:00 -0500
 author:
-name: Mateo Ortegon
-link: https://teoo.io
+  name: Mateo Ortegon
+  link: https://teoo.io
 categories: [Meeting Logs, Minutes]
 tags: [meeting, minutes]     # TAG names should always be lowercase
 toc: true

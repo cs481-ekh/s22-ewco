@@ -19,10 +19,9 @@ author:
   link: https://personal.site
 categories: [Category, Sub-Category]
 tags: [tag1, tag2]     # TAG names should always be lowercase
-toc: true # enable/disable Table of Contents on post
-math: true
-mermaid: true
-img_path: /assets/img/
+toc: true   # enable/disable Table of Contents on post
+math: false  # enable/disable latec rendering
+mermaid: false  # enable/disable mermaid graph rendering
 ---
 ```
 ### Content
