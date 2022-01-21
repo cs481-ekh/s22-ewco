@@ -1,6 +1,6 @@
 ---
 title: FreeBSD Industrial HMI Kiosk
-date: 2022-01-22 09:00:00 -0500
+date: 2022-01-21 00:01:00 -0500
 author:
   name: Mateo Ortegon
   link: https://teoo.io
