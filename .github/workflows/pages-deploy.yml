@@ -1,4 +1,4 @@
-name: 'Automatic Documentation Page Build'
+name: 'Automatic Deployment - Documentation'
 on:
   workflow_dispatch:
   push:
