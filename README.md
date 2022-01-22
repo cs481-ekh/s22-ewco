@@ -1,7 +1,11 @@
 # 🦾 Dexter's Lab
 [![Automatic build](https://github.com/cs481-ekh/S22-ewco/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/cs481-ekh/ewco/actions/workflows/pages-deploy.yml)
 ## 📚 Documentation
-Visit the [documentation website](https://cs481-ekh.github.io/s22-ewco/)!
+Visit the [documentation website](https://cs481-ekh.github.io/s22-ewco/) for:
+- Problem statement and relevant docs
+- Meeting minutes
+- Research findings
+- Product usage
 
 ## 📜 Creating a Website Post
 All website posts are written in Markdown and placed under the ```_posts``` directory.
