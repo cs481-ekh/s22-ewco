@@ -9,7 +9,7 @@ All website posts are written in Markdown and placed under the ```_posts``` dire
 ### File Name
 All posts must follow the ```YYYY-MM-DD-TITLE.EXTENSION``` format, for example ```2022-01-20-Title.md```.
 ### Header
-Include the following heather at the top of the ```.md``` file:
+Include the following header at the top of the ```.md``` file:
 ```yaml
 ---
 title: Markdown Supported
