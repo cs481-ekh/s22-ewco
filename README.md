@@ -30,3 +30,5 @@ mermaid: false  # enable/disable mermaid graph rendering
 ```
 ### Content
 For a demo of markdown supported [view this post](https://cs481-ekh.github.io/s22-ewco/posts/Markdown-Supported/) - the source is [found here](https://github.com/cs481-ekh/s22-ewco/blob/main/_posts/2022-01-17-Markdown-Supported.md?plain=1).
+
+> **Note:** If the date specified on the header has not passed yet, the post will not be rendered and therefore won't show up on the deployed website. 
