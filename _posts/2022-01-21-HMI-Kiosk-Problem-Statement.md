@@ -74,9 +74,7 @@ while posing an IP security problem when code is in plaintext on the device.
 ## Desired Solution
 Go West would like to have a proof of concept for a lightweight OS and webserver running on small
 footprint hardware; a Celeron CPU with 1GB RAM. This should be enough to run a FireFox browser in
-kiosk mode, without installing a desktop environment. For the OS we would like to use FreeBSD (latest
-BSU CS Senior Project Proposal - Go West Robotics - 1/19/2022
-stable) and a frontend written in Vue.js. The backend webserver runs on the same machine and is
+kiosk mode, without installing a desktop environment. For the OS we would like to use FreeBSD and a frontend written in Vue.js. The backend webserver runs on the same machine and is
 written in Rust; we recommend ‘Warp’. It should communicate with a PostgreSQL Database using the
 Diesel library.
 
