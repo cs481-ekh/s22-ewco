@@ -30,7 +30,7 @@ echo "        :ht:np:sp#115200:al=usr:" >> /etc/gettytab
 >**Note:** The console that is seen on the physical display is ```ttyv0```. This console along with any
 other virtual ones are defined in ```/etc/ttys```.
 
-Lastly, specify which console the user should auto log in to, edit the `ttys` file in `/etc`. Change `ttyvo`
+Lastly, specify which console the user should auto log in to. For this, edit the `ttys` file in `/etc`. Change `ttyvo`
 to specify the login username instead of `Pc`.
 
 ```shell
