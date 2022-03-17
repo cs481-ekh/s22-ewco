@@ -11,9 +11,7 @@ math: false
 mermaid: false
 ---
 **Sprint Goal:**
-- [ ] Get all UI buttons completed
-- [ ] All CRUD operations functional from the UI
-- [ ] Complete MVP to work on stretch goals during Sprint 3
+- [ ] Complete MVP to work on stretch goals during Sprint 4
 
 **Tasks:**
 - [ ] Pagination for task table

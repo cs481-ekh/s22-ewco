@@ -28,7 +28,7 @@ We are having some issues with the CI deployment step during testing that are un
 
 ### Tasks Completed:
 All tasks were completed
-- [x] Added modal template FOR Ui
+- [x] Added modal template for UI
 - [x] Added UI buttons to interact with back-end
 - [x] Fixed (then broke again) CI/CD
 - [x] Rust Logging
