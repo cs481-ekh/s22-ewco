@@ -11,7 +11,7 @@ math: true
 mermaid: true
 ---
 To run the application, you need to follow the following steps.
->**NOTE:** This application is designed to be accessed only on local host. As such the API only listens on interface `127.0.0.1` - this is hard-coded in `main.rs`.
+>**NOTE:** This application is designed to be accessed only on `localhost`. As such the API only listens on interface `127.0.0.1` - this is hard-coded in `main.rs`.
 >
 > Additionally, the front end sends API requests to `localhost:3030`, this is hardcoded in the `App.vue` file of each page in the UI.
 >
@@ -22,6 +22,7 @@ To run the application, you need to follow the following steps.
 ### Rust
 Run the following command to install Rust.
 >**Note:** this command is piping the script into `sh`
+
 ```shell
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
@@ -51,6 +52,7 @@ diesel migration run --migration-dir ./api/migrations --database-url postgres://
 ### Run Tests
 As a sanity check, run the Test suite to make sure the API is able to interact with the database.
 >**Note:** Ensure the `.env` file in the `./api` contains the proper credentials for the Postgres DB - these are what the API will use.
+
 ```shell
 cargo test --manifest-path ./api/Cargo.toml
 ```
