@@ -5,4 +5,4 @@ order: 4
 ---
 
 
-> **Note**: Still under construction. To add content, edit about.md file under _tabs
+> View [problem statement](https://cs481-ekh.github.io/s22-ewco/posts/HMI-Kiosk-Problem-Statement/).

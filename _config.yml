@@ -18,7 +18,7 @@ timezone: America/Boise
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: GoWest Robotics                          # the main title
+title: EWCO Team                         # the main title
 
 tagline: Documentation for Emdedded WebController   # it will display as the sub-title
 
@@ -29,10 +29,7 @@ description: >-                        # used by seo meta and the atom feed
 url: 'https://cs481-ekh.github.io/s22-ewco/'
 
 github:
-  username: GoWestRobotics             # change to your github username
-
-twitter:
-  username: twitter_username            # change to your twitter username
+  username: cs481-ekh             # change to your github username
 
 social:
   # Change to your full name.
@@ -41,8 +38,7 @@ social:
   email: fake@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/boisestate       # change to your github homepage
-    - https://www.linkedin.com/in/GoWestRobotics
+    - https://github.com/cs481-ekh/s22-ewco       # change to your github homepage
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
