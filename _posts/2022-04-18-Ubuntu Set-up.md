@@ -29,7 +29,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ### General Dependencies
 Use the `apt` package manager to install dependencies.
 ```shell
-sudo apt install -y postgresql-12 libpq-dev nginx npm build-essential npm
+sudo apt install -y postgresql-12 libpq-dev nginx npm build-essential
 ```
 
 ### NodeJS
@@ -123,7 +123,7 @@ cargo run
 ### Run the Front-End
 The front end should already be serving on port 80 if NGINX is running. To check if NGINX is running use the following command.
 ```shell
-sudo systeemctl status nginx
+sudo systemctl status nginx
 ```
 If NGINX is running and the UI is still not reachable on port 80 this may be a firewall issue, in which case follow these steps.
 ```shell
