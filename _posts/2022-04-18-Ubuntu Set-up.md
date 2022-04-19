@@ -38,7 +38,7 @@ Follow online documentation to install the latest version of NodeJS. The latest 
 ### Diesel CLI
 Diesel is the ORM for the Rust API. Use Cargo to install Diesel CLI.
 ```shell
-cargo install diesel_cli --no-default-features --features postgres || { echo "cargo could not install diesel_cli"; exit 1; }
+cargo install diesel_cli --no-default-features --features postgres
 ```
 
 ## Set up
