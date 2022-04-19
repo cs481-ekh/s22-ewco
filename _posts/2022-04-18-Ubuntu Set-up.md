@@ -10,7 +10,7 @@ toc: true
 math: true
 mermaid: true
 ---
-To run the application, you need to follow the following steps.
+To run the application from scratch, you need to follow the steps outlined below.
 >**NOTE:** This application is designed to be accessed only on `localhost`. As such the API only listens on interface `127.0.0.1` - this is hard-coded in `main.rs`.
 >
 > Additionally, the front end sends API requests to `localhost:3030`, this is hardcoded in the `App.vue` file of each page in the UI.
