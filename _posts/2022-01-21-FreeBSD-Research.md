@@ -24,20 +24,3 @@ usr@fbsd-onlogic:~ $ dmesg | grep memory
 real memory  = 1073741824 (1024 MB)
 avail memory = 821465088 (783 MB)
 ```
-
-
-# Containerization
-Containerization technologies would allow us to deploy each component of the HMI as a microservice - which addresses some of the design
-requirements particularly around security and ease of update.
-
-We are exploring the following containerization technologies:
-## K3s
-### Pros
-### Cons
-
-## FreeBSD Jails
-### Pros
-- Native to FreeBSD
-### Cons
-
-##
