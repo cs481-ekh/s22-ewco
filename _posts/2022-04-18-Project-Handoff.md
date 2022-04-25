@@ -2,8 +2,7 @@
 title: Project Handoff
 date: 2022-04-18 09:00:00 -0500
 author:
-  name: Mateo Ortegon
-  link: https://teoo.io
+  name: EWCO
 categories: [Documentation, Handoff]
 tags: [project, handoff]
 toc: true
