@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://cs481-ekh.github.io/s22-ewco//s22-ewco/sitemap.xml
