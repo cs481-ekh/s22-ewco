@@ -19,7 +19,7 @@ Historically, HMI’s are part of a complicated network of expensive hardware (w
 machines). To minimize cost for clients, GoWest Robotics needs a system that can run on simple cost effective computers
 without sacrificing any critical functionality or UX; this project is designed to address that need.
 
-> View full project background [here.](https://cs481-ekh.github.io/s22-ewco/posts/HMI-Kiosk-Problem-Statement/).
+> View full project background [here](https://cs481-ekh.github.io/s22-ewco/posts/HMI-Kiosk-Problem-Statement/).
 
 ## Project Description
 The OnLogic CL200g-11 boots up and launches Firefox in kiosk mode, where the user is then served with the web
